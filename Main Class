@@ -1,0 +1,34 @@
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//constructor injection
+		
+		  PaymentaProcess pp=new PaymentaProcess(new DebitCard());
+		 
+		 //setterinjection
+		  pp.setPayment(new AmexCard());
+		 
+		
+		
+			/*
+			 * //constructor injection => here we pass object in Constructor PaymentaProcess
+			 * pp1=new PaymentaProcess(new CreditCard() );
+			 */
+		  
+		  
+		//setterinjection 
+		pp.doThePayment("CreditCard",100.0);
+		
+		boolean status=pp.doThePayment("CreditCard", 100.0);
+		
+		if(status)
+			System.out.println("Payment sucess come again!");
+		else
+			System.out.println("Payment failed do you have money? or dishes washing");
+
+	}
+
+}
+
