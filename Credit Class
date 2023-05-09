@@ -1,0 +1,9 @@
+public class CreditCard implements ICards
+{ 
+	public boolean payingBill(Double bill)
+	{
+		System.out.println("Paying the bill using Credit Card" + bill);
+		return true;
+	}
+
+}
