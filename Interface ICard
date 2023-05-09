@@ -1,0 +1,5 @@
+public interface ICards {
+
+	boolean payingBill(Double bill);
+
+}
